@@ -5,7 +5,7 @@
         "declaration": false,
         "strictNullChecks": true,
         "outDir": "lib",
-        "target": "es2015",
+        "target": "es2018",
         "module": "commonjs",
         "moduleResolution": "node",
         "noImplicitThis": true,
