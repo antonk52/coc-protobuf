@@ -33,7 +33,7 @@ function getMessageDefinitionStartPosition(messageName: string, fileContent: str
     let matchLineOffset: number = 0;
     let matchLineIndex: number = 0;
 
-    for (let i = 0; i <= allLines.length; i++) {
+    for (let i = 0; i < allLines.length; i++) {
         const line = allLines[i];
         match = line.match(pattern);
 
