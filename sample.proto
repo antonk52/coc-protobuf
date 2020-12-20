@@ -1,0 +1,28 @@
+message OuterMessage
+{
+    optional string id = 1;
+}
+
+message AnotherMessage
+{
+
+    optional OuterMessage foo = 1;
+
+    oneof mechanics_data {
+        InnerMessageOne one = 2;
+        InnerMessageTwo two = 3;
+    }
+
+    // comment content
+    message InnerMessageOne
+    {
+        optional string id = 1;
+        optional OtherPackage.Price base_price = 2;
+    }
+
+    message InnerMessageTwo
+    {
+        optional string global_id = 1;
+        optional OtherPackage.Price global_price = 2;
+    }
+}
